@@ -1,0 +1,20 @@
+server:
+  port: 211381
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10086/eureka
+    fetch-registry: true #不从注册中心拉取注册表
+zuul:
+  routes:
+    order_service:
+      path: /order-service/**
+      serviceId: order-service
+    eureka_server:
+      path: /eureka-server/**
+      serviceId: lzy-eureka-server-demo
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

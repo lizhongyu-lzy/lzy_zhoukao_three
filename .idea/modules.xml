@@ -4,7 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/config-server/configserver.iml" filepath="$PROJECT_DIR$/config-server/configserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka_server/eureka_server.iml" filepath="$PROJECT_DIR$/eureka_server/eureka_server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hetong_api/hetong_api.iml" filepath="$PROJECT_DIR$/hetong_api/hetong_api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hetong_service/hetong_service.iml" filepath="$PROJECT_DIR$/hetong_service/hetong_service.iml" />
       <module fileurl="file://$PROJECT_DIR$/lzy_zhoukao_three.iml" filepath="$PROJECT_DIR$/lzy_zhoukao_three.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zuul_server/zuul_server.iml" filepath="$PROJECT_DIR$/zuul_server/zuul_server.iml" />
     </modules>
   </component>
 </project>

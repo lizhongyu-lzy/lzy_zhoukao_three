@@ -5,5 +5,5 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/lizhongyu-lzy/lzy_sell.git
-          search-paths: config-repo
+          uri: https://github.com/lizhongyu-lzy/lzy_zhoukao_three.git
+          search-paths: config-repository

@@ -1,18 +1,16 @@
-package com.lzy.hetong.pojo;
+package com.lzy.hetong.vo;
 
-import javax.persistence.*;
+import com.lzy.hetong.pojo.HuiKuan;
+
 import java.math.BigDecimal;
 import java.util.List;
 
-@Entity
-@Table(name = "t_hetong")
-public class Hetong {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+public class ReposeVO {
     private String hetong_id;
     private String user_id;
     private BigDecimal hetong_price;
     private String descs;
+    private List<HuiKuan> huiKuans;
 
     public String getHetong_id() {
         return hetong_id;
@@ -46,11 +44,11 @@ public class Hetong {
         this.descs = descs;
     }
 
-//    public List<HuiKuan> getHuikuans() {
-//        return huikuans;
-//    }
-//
-//    public void setHuikuans(List<HuiKuan> huikuans) {
-//        this.huikuans = huikuans;
-//    }
+    public List<HuiKuan> getHuiKuans() {
+        return huiKuans;
+    }
+
+    public void setHuiKuans(List<HuiKuan> huiKuans) {
+        this.huiKuans = huiKuans;
+    }
 }

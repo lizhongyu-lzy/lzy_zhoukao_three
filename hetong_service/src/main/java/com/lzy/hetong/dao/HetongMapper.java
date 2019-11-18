@@ -1,4 +1,4 @@
-package dao;
+package com.lzy.hetong.dao;
 
 import com.lzy.hetong.pojo.Hetong;
 import org.springframework.data.jpa.repository.JpaRepository;

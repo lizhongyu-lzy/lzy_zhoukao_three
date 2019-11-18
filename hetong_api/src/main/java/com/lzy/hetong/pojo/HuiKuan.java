@@ -10,20 +10,18 @@ import java.util.Date;
 @Table(name = "t_huikuan")
 public class HuiKuan {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+
     private String hetong_id;
     private BigDecimal hetong_price;
     private BigDecimal yukuan_price;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private String yukuan_id;
     private Date yukuan_time;
 
     private BigDecimal huikuan_price;
     private String name;
     private String descs;
-    @ManyToOne(targetEntity = Hetong.class)
-    @JoinColumn(name = "hetong_id")
-    private Hetong hetong;
 
     public String getHetong_id() {
         return hetong_id;
@@ -89,11 +87,11 @@ public class HuiKuan {
         this.name = name;
     }
 
-    public Hetong getHetong() {
-        return hetong;
-    }
-
-    public void setHetong(Hetong hetong) {
-        this.hetong = hetong;
-    }
+//    public Hetong getHetong() {
+//        return hetong;
+//    }
+//
+//    public void setHetong(Hetong hetong) {
+//        this.hetong = hetong;
+//    }
 }

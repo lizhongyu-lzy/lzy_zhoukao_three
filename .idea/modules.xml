@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/hetong_api/hetong_api.iml" filepath="$PROJECT_DIR$/hetong_api/hetong_api.iml" />
       <module fileurl="file://$PROJECT_DIR$/hetong_service/hetong_service.iml" filepath="$PROJECT_DIR$/hetong_service/hetong_service.iml" />
       <module fileurl="file://$PROJECT_DIR$/lzy_zhoukao_three.iml" filepath="$PROJECT_DIR$/lzy_zhoukao_three.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zhoukao_three_vue/zhoukao_three_vue.iml" filepath="$PROJECT_DIR$/zhoukao_three_vue/zhoukao_three_vue.iml" />
       <module fileurl="file://$PROJECT_DIR$/zuul_server/zuul_server.iml" filepath="$PROJECT_DIR$/zuul_server/zuul_server.iml" />
     </modules>
   </component>

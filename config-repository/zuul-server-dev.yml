@@ -8,8 +8,8 @@ eureka:
 zuul:
   routes:
     order_service:
-      path: /order-service/**
-      serviceId: order-service
+      path: /hetong-service/**
+      serviceId: hetong-service
     eureka_server:
       path: /eureka-server/**
       serviceId: lzy-eureka-server-demo

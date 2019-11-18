@@ -41,9 +41,6 @@ public class HeTongVO {
 //    合同编号必须是选择,手写输入计0(2分)
 
 
-    public String getHetong_id() {
-        return hetong_id;
-    }
 
     public void setHetong_id(String hetong_id) {
         this.hetong_id = hetong_id;
@@ -83,6 +80,10 @@ public class HeTongVO {
 
     public BigDecimal getYukuan_price() {
         return yukuan_price;
+    }
+
+    public String getHetong_id() {
+        return hetong_id;
     }
 
     public void setYukuan_price(BigDecimal yukuan_price) {

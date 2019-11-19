@@ -91,11 +91,11 @@ public class HeTongServiceImpl implements HeTongService {
             reposeVO.setHetong_id(hetong.getHetong_id());
             reposeVO.setHetong_price(hetong.getHetong_price());
             reposeVO.setUser_id(hetong.getUser_id());
-            for (HuiKuan huikuan : huiKuans) {
-                if (hetong.getHetong_id().equals(huikuan.getHetong_id())) {
-                    huiKuansa.add(huikuan);
-                }
-            }
+//            for (HuiKuan huikuan : huiKuans) {
+//                if (hetong.getHetong_id().equals(huikuan.getHetong_id())) {
+//                    huiKuansa.add(huikuan);
+//                }
+//            }
             list.add(reposeVO);
         }
 
@@ -104,7 +104,6 @@ public class HeTongServiceImpl implements HeTongService {
 
     @Override
     public Boolean deleteAll(String ids) {
-
         try {
             String[] split = ids.split(",");
             for (int i = 0; i < split.length; i++) {
@@ -112,12 +111,8 @@ public class HeTongServiceImpl implements HeTongService {
             }
             return  true;
         }catch (Exception e){
-
             return false;
         }
-
-
-
     }
 
 }

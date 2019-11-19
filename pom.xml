@@ -8,6 +8,7 @@
         <module>zuul_server</module>
         <module>hetong_service</module>
         <module>hetong_api</module>
+        <module>he_tong_test</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

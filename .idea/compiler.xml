@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="configserver" />
         <module name="eureka_server" />
+        <module name="he_tong_test" />
         <module name="hetong_api" />
         <module name="hetong_service" />
         <module name="zuul_server" />
@@ -16,6 +17,7 @@
     <bytecodeTargetLevel>
       <module name="configserver" target="1.8" />
       <module name="eureka_server" target="1.8" />
+      <module name="he_tong_test" target="1.8" />
       <module name="hetong_api" target="1.8" />
       <module name="hetong_service" target="1.8" />
       <module name="lzy_zhoukao_three" target="1.8" />

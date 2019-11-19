@@ -5,13 +5,11 @@ import java.math.BigDecimal;
 import java.text.DateFormat;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "t_huikuan")
 public class HuiKuan {
-
-
-    private String hetong_id;
     private BigDecimal hetong_price;
     private BigDecimal yukuan_price;
     @Id
@@ -23,20 +21,21 @@ public class HuiKuan {
     private String name;
     private String descs;
 
-    public String getHetong_id() {
-        return hetong_id;
-    }
+    @ManyToOne
+    private Hetong hetong;
 
-    public void setHetong_id(String hetong_id) {
-        this.hetong_id = hetong_id;
-    }
-
-    public String getDescs() {
-        return descs;
-    }
-
-    public void setDescs(String descs) {
-        this.descs = descs;
+    @Override
+    public String toString() {
+        return "HuiKuan{" +
+                "hetong_price=" + hetong_price +
+                ", yukuan_price=" + yukuan_price +
+                ", yukuan_id='" + yukuan_id + '\'' +
+                ", yukuan_time=" + yukuan_time +
+                ", huikuan_price=" + huikuan_price +
+                ", name='" + name + '\'' +
+                ", descs='" + descs + '\'' +
+                ", hetong=" + hetong +
+                '}';
     }
 
     public BigDecimal getHetong_price() {
@@ -87,11 +86,19 @@ public class HuiKuan {
         this.name = name;
     }
 
-//    public Hetong getHetong() {
-//        return hetong;
-//    }
-//
-//    public void setHetong(Hetong hetong) {
-//        this.hetong = hetong;
-//    }
+    public String getDescs() {
+        return descs;
+    }
+
+    public void setDescs(String descs) {
+        this.descs = descs;
+    }
+
+    public Hetong getHetong() {
+        return hetong;
+    }
+
+    public void setHetong(Hetong hetong) {
+        this.hetong = hetong;
+    }
 }

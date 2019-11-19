@@ -26,4 +26,8 @@ public class HeTongController {
     public Boolean deletes(String ids){
         return  hetongService.deleteAll(ids);
     }
+    @RequestMapping("hello")
+    public String Hello(String name){
+        return  "hello"+name;
+    }
 }

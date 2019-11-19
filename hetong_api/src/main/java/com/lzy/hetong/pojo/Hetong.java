@@ -14,6 +14,11 @@ public class Hetong {
     private BigDecimal hetong_price;
     private String descs;
 
+
+    @OneToMany(mappedBy = "hetong",cascade = CascadeType.ALL)
+    private List<HuiKuan> huiKuans;
+
+
     public String getHetong_id() {
         return hetong_id;
     }
